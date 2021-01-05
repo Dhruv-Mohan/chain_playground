@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="add.cpp" />
     <ClCompile Include="algorithm.cpp" />
     <ClCompile Include="chain.cpp" />
     <ClCompile Include="chain_playground.cpp" />
     <ClCompile Include="data.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="add.h" />
     <ClInclude Include="algorithm.h" />
     <ClInclude Include="chain.h" />
     <ClInclude Include="data.h" />
