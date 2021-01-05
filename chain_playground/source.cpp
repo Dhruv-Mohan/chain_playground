@@ -9,11 +9,18 @@ int main()
 	std::shared_ptr<data> test_data = std::make_shared<data>(data(1, 2));
 	add algo_add(test_data);
 	std::shared_ptr<algorithm> share_add(new add(test_data));
-	//chain test_chain;
-	//test_chain.add_algo(algo_add);
-	//test_chain.execute();
+	std::shared_ptr<algorithm> share_add2(new add(test_data));
+	chain test_chain;
+	test_chain.add_algo(share_add);
+	test_chain.add_algo(share_add2);
+	test_chain.execute();
 	std::cout << "A=" << test_data->a << std::endl;
 	std::cout << "B=" << test_data->b << std::endl;
-	
+	/*multiple improvements required!
+	* disconnect data ptr from algos
+	* add data_ptr to chain executor 
+	* fix moving of refrences in chain add.
+	* i.e there should be no need to init multiple instances of the same algo object 
+	*/
 	return 0;
 }
