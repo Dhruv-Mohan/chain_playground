@@ -11,26 +11,20 @@ int main()
 	add algo_add;
 	std::shared_ptr<algorithm> share_add(new add);
 	std::shared_ptr<algorithm> share_sub(new sub);
-	//std::shared_ptr<algorithm> share_add2(new add);
 	chain test_chain;
 
-
+	//TODO: Add to builder class
 	test_chain.add_algo(share_add);
 	test_chain.add_algo(share_add);
 	test_chain.add_algo(share_sub);
 	test_chain.add_algo(share_sub);
 	test_chain.add_algo(share_sub);
-	//test_chain.add_algo(share_add);
 
 
+	//Execution
 	test_chain.execute(test_data);
 	std::cout << "A=" << test_data->a << std::endl;
 	std::cout << "B=" << test_data->b << std::endl;
-	/*multiple improvements required!
-	* disconnect data ptr from algos
-	* add data_ptr to chain executor 
-	* fix moving of refrences in chain add.
-	* i.e there should be no need to init multiple instances of the same algo object 
-	*/
+
 	return 0;
 }
