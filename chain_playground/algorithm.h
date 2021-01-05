@@ -4,7 +4,7 @@
 class algorithm
 {public:
 	algorithm(std::shared_ptr<data> input_data);
-	virtual ~algorithm() = 0;
+	virtual ~algorithm() = default;
 	void set_next_algorithm(std::shared_ptr<algorithm> suceeding_algo);
 	void execute();
 	virtual void compute()=0;

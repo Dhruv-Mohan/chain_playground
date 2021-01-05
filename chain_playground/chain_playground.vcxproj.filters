@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chain_playground.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="chain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

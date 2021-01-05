@@ -142,7 +142,6 @@
     <ClCompile Include="add.cpp" />
     <ClCompile Include="algorithm.cpp" />
     <ClCompile Include="chain.cpp" />
-    <ClCompile Include="chain_playground.cpp" />
     <ClCompile Include="data.cpp" />
     <ClCompile Include="source.cpp" />
   </ItemGroup>
