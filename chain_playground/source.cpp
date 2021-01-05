@@ -9,10 +9,16 @@ int main()
 	std::shared_ptr<data> test_data = std::make_shared<data>(data(1, 2));
 	add algo_add;
 	std::shared_ptr<algorithm> share_add(new add);
-	std::shared_ptr<algorithm> share_add2(new add);
+	//std::shared_ptr<algorithm> share_add2(new add);
 	chain test_chain;
+
+
 	test_chain.add_algo(share_add);
-	test_chain.add_algo(share_add2);
+	test_chain.add_algo(share_add);
+
+	//test_chain.add_algo(share_add);
+
+
 	test_chain.execute(test_data);
 	std::cout << "A=" << test_data->a << std::endl;
 	std::cout << "B=" << test_data->b << std::endl;
