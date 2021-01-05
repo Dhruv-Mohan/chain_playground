@@ -12,6 +12,7 @@ void algorithm::set_next_algorithm(std::shared_ptr<algorithm> suceeding_algo)
 void algorithm::execute()
 {
 	compute();
+	execute_next();
 
 }
 
