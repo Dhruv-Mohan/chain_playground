@@ -13,7 +13,7 @@ public:
 
 	}
 	void add_algo(std::shared_ptr<algorithm> incoming_algo);
-	void execute();
+	void execute(std::shared_ptr<data> data_ptr);
 private:
 	void link(std::shared_ptr<algorithm> incoming_algo);
 	void set_header(std::shared_ptr<algorithm> incoming_algo);

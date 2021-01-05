@@ -6,8 +6,8 @@ class add :
     virtual public algorithm
 {
 public:
-    add(std::shared_ptr<data> incoming_data);
+    add();
     ~add();
-    void compute() override;
+    void compute(std::shared_ptr<data> data_ptr) override;
 };
 
