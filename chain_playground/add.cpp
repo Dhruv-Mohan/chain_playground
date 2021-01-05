@@ -1,5 +1,10 @@
 #include "add.h"
 
+add::add(std::shared_ptr<data> incoming_data): algorithm(incoming_data)
+{
+
+}
+
 add::~add()
 {
 }
