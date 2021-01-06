@@ -12,7 +12,5 @@ protected:
 	std::shared_ptr<algorithm> next_algo=0; 
 	virtual void compute(std::shared_ptr<data> data_ptr) = 0;
 
-private:
-	void execute_next(std::shared_ptr<data> data_ptr);
 };
 

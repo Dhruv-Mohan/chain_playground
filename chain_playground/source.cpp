@@ -8,7 +8,6 @@
 int main() 
 {
 	std::shared_ptr<data> test_data = std::make_shared<data>(data(1, 2));
-	add algo_add;
 	std::shared_ptr<algorithm> share_add(new add);
 	std::shared_ptr<algorithm> share_sub(new sub);
 	chain test_chain;
@@ -27,4 +26,6 @@ int main()
 	std::cout << "B=" << test_data->b << std::endl;
 
 	return 0;
+
+	//Make adapter class to adapt data class to algo
 }
