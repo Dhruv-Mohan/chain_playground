@@ -8,6 +8,8 @@ class add :
 public:
     add();
     ~add();
-    void compute(std::shared_ptr<data> data_ptr) override;
+    void execute(std::shared_ptr<data> in_data_ptr) override;
+private:
+    std::shared_ptr<data2> data_ptr;
 };
 

@@ -2,15 +2,16 @@
 
 add::add()
 {
-
+	
 }
 
 add::~add()
 {
 }
 
-void add::compute(std::shared_ptr<data> data_ptr)
+void add::execute(std::shared_ptr<data> in_data_ptr)
 {
-	data_ptr->a = data_ptr->a + data_ptr->b;
+	data_ptr = std::static_pointer_cast<data2>(in_data_ptr);
+	data_ptr->c = data_ptr->c + data_ptr->d;
 
 }

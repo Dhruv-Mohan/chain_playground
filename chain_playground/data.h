@@ -2,15 +2,16 @@
 class data
 {
 public:
-	data(int a, int b);
+	//data(int a, int b);
+	data();
 	~data();
 	int a, b;
 };
 
-class data2 : virtual public data
+class data2 : public data
 {
 public:
-	data2();
+	data2(float a, float b);
 	~data2();
-	int c, d;
+	float c, d;
 };
